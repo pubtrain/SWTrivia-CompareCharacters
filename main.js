@@ -108,7 +108,7 @@ class Character {
       } else if (this.hairColor === char.hairColor) {
         infoBubble1.innerHTML = `<p>Me and ${char.name} share the same perfect color.</p>`;
       } else {
-        infoBubble1.innerHTML = `<p>I love my ${this.hairColor} hair, next to ${char.name}, i despise that ${char.hairColor} color.</p>`;
+        infoBubble1.innerHTML = `<p>I love my ${this.hairColor} hair, next to ${char.name}, I despise that ${char.hairColor} color.</p>`;
       }
     } else {
       if (this.hairColor === 'none' || this.hairColor === 'n/a') {
