@@ -1,0 +1,29 @@
+header {
+  display: inline-block;
+  width: 100vw;
+  height: 15vh;
+  text-align: center;
+}
+
+.content-wrap {
+  display: flex;
+  width: 100vw;
+  height: 60vh;
+}
+.char-select {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+
+.submit-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  height: 20rem;
+  width: 20rem;
+}

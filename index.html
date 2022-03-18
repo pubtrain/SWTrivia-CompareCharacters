@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SWTrivia</title>
+  </head>
+  <body>
+    <header>
+      <h1>Star Wars Trivia</h1>
+    </header>
+    <div class="content-wrap">
+      <div class="char-select" id="select-wrap1">
+        <div class="character-card" id="char-card1"></div>
+        <select
+          name="selectCharacter1"
+          id="selectCharacter1"
+          class="characterSelect"
+        >
+          <option value="null" selected disabled>Select character</option>
+          <option value="1">Luke Skywalker</option>
+          <option value="2">C-3PO</option>
+          <option value="3">R2-D2</option>
+          <option value="4">Darth Vader</option>
+          <option value="5">Leia Organa</option>
+          <option value="6">Owen Lars</option>
+          <option value="7">Beru Whitesun lars</option>
+          <option value="8">R5-D4</option>
+        </select>
+        <div class="answerWrapper">
+          <div id="infoBubble1"></div>
+        </div>
+      </div>
+      <div class="char-select" id="select-wrap2">
+        <div class="character-card" id="char-card2"></div>
+        <select
+          name="selectCharacter2"
+          id="selectCharacter2"
+          class="characterSelect"
+        >
+          <option value="null" selected disabled>Select character</option>
+          <option value="1">Luke Skywalker</option>
+          <option value="2">C-3PO</option>
+          <option value="3">R2-D2</option>
+          <option value="4">Darth Vader</option>
+          <option value="5">Leia Organa</option>
+          <option value="6">Owen Lars</option>
+          <option value="7">Beru Whitesun lars</option>
+          <option value="8">R5-D4</option>
+        </select>
+        <div id="infoBubble2"></div>
+      </div>
+    </div>
+    <div class="submit-wrap">
+      <button type="submit" id="submitBtn">Choose, you may</button>
+    </div>
+    <footer></footer>
+    <script src="main.js"></script>
+  </body>
+</html>
