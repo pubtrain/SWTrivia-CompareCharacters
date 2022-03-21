@@ -24,6 +24,19 @@ header {
 }
 
 img {
-  height: 20rem;
-  width: 20rem;
+  height: 17rem;
+  width: 17rem;
+}
+
+body {
+  background-image: url('./img/Star-Space-Animation.gif');
+  background-size: cover;
+
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  color: white;
 }

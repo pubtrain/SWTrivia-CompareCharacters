@@ -4,8 +4,6 @@ const characterCardTwo = document.getElementById('char-card2');
 const submitBtn = document.getElementById('submitBtn');
 const selectCharacter1 = document.getElementById('selectCharacter1');
 const selectCharacter2 = document.getElementById('selectCharacter2');
-const selectWrap1 = document.getElementById('select-wrap1');
-const selectWrap2 = document.getElementById('select-wrap2');
 const infoBubble1 = document.getElementById('infoBubble1');
 const infoBubble2 = document.getElementById('infoBubble2');
 let characterOne;
@@ -34,7 +32,6 @@ class Character {
     this.hairColor = hairColor;
     this.who = who;
     this.pictureUrl;
-
     if (name == 'Luke Skywalker') {
       this.pictureUrl = './img/Luke_skywalker.webp';
     } else if (name == 'Owen Lars') {
@@ -66,7 +63,7 @@ class Character {
       if (this == characterOne) {
         infoBubble1.innerHTML = `<p>I weigh ${this.mass}kg, I'm so lightweight next to ${char.name}, that mountain has ${char.mass} kilos!</p>`;
       } else {
-        infoBubble2.innerHTML = `<p>I'm only ${this.mass}kg, I feel like a leaf next to ${char.name}, he has ${char.mass} kilos!</p>`;
+        infoBubble2.innerHTML = `<p>I'm only ${this.mass}kg, I feel like a leaf next to ${char.name}, that one has ${char.mass} kilos!</p>`;
       }
     } else {
       if (this == characterOne) {
@@ -108,7 +105,7 @@ class Character {
       } else if (this.hairColor === char.hairColor) {
         infoBubble1.innerHTML = `<p>Me and ${char.name} share the same perfect color.</p>`;
       } else {
-        infoBubble1.innerHTML = `<p>I love my ${this.hairColor} hair, next to ${char.name}, I despise that ${char.hairColor} color.</p>`;
+        infoBubble1.innerHTML = `<p>I love my ${this.hairColor} hair. ${char.name}, has an interesting ${char.hairColor} color.</p>`;
       }
     } else {
       if (this.hairColor === 'none' || this.hairColor === 'n/a') {
@@ -116,7 +113,7 @@ class Character {
       } else if (this.hairColor == char.hairColor) {
         infoBubble2.innerHTML = `<p>Me and ${char.name} uses the same shampoo obviously!</p>`;
       } else {
-        infoBubble2.innerHTML = `<p>I love my ${this.hairColor} hair, I hate ${char.name} with that disgusting ${char.hairColor} hair!</p>`;
+        infoBubble2.innerHTML = `<p>I love my ${this.hairColor} hair. ${char.name} has an interesting ${char.hairColor} haircolor!</p>`;
       }
     }
   }
@@ -158,12 +155,6 @@ let buildCharacterCard = (character) => `
 <h2>${character.name}</h2>
 <img src="${character.pictureUrl}">
 </div>
-<ul class="generalInfo">
-          <li>Gender: ${character.gender}</li>
-          <li>Height: ${character.height} cm</li>
-          <li>Mass: ${character.mass} kg</li>
-          <li>Hair color: ${character.hairColor}</li>
-        </ul>
 <div class="character-buttons">
     <button id="diffBtn" class="weight" data-id="${character.who}">Weight</button>
     <button id="diffBtn" class="length" data-id="${character.who}">Length</button>
@@ -220,4 +211,3 @@ let checkerBtn = (character, characterTwo, attribute, btn) => {
     }
   }
 };
-// diffButtons();
